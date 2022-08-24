@@ -1,0 +1,59 @@
+
+1. Variation in the Y explained by the model
+2. Unexplained variation
+
+Y     =   				b0 + b1X           +             e
+Variation in the Y 		Variation in the Y 				Variation in the Y not explained by the model
+						explained by the model
+						
+						
+SST = SSR + SSE
+
+sum of squares of total variation
+SSR = sum of squares of explained variation
+SSE = sum of squares of unexplained variation ( error)
+
+R squared = SSR/SST  =  1 - SSE/SST
+
+----------------------------------------------------------------------
+
+
+1. p >= 0
+2. p <= 1
+
+
+p = exp(b0 + b1x)   - (1)
+
+
+p = exp(b0 + b1x) / exp(b0 + b1x) + 1     -(2)
+
+y = b0 + b1X   -(3)
+
+using 1,2,3 :
+
+logit function:
+p = e^y / e^y + 1      -(4)
+
+q = 1-p
+
+q = 1- (e^y / e^y + 1)    -(5)
+
+p/q => (4) / (5)
+
+p/1-p = e^y
+
+log on both sides,
+
+log(p/1-p) = y
+
+from (3)
+
+log(p/1-p) = y = b0 + b1x
+
+log transformation on the target variable is allowing us to 
+model a non-linear association in a linear way.
+
+
+
+
+
